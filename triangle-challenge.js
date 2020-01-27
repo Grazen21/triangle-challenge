@@ -4,8 +4,8 @@ let star= "*";
 let rightAngleTriangle= "";
 // building of flipped right angle triangle
 let flippedRightAngleTriangle= "";
-// reverse order of counting
-let countup= 1;
+// building of pyramid
+let pyramid= "";
 // smallest empty spaces component
 let space= " ";
 
@@ -26,6 +26,12 @@ start = () => {
             flippedRightAngleTriangle += "\n"+ space.repeat(input-i) +star.repeat(i+1);
         };
         console.log("Flipped Right Angle Triangle"+flippedRightAngleTriangle);
+
+        // function for pyramid
+        for (i=0; i < input; i++){
+            pyramid += "\n" + space.repeat(input-i-1) +star.repeat(i*2+1)+ space.repeat(input-i-1);
+        };
+        console.log("Pyramid"+pyramid);
     }
     else {
         alert("Please enter an integer between 0-10.")
