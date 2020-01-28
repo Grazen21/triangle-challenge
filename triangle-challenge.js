@@ -11,9 +11,8 @@ let space= " ";
 
 start = () => {
 
-    let input = prompt("Key in a number for the number of layers in the triangle. Between 0-10");
+    let input =  parseInt(prompt("Key in a number for the number of layers in the triangle. Between 0-10"));
 
-    // for all triangles
     if (input >=0 && input <=10) {
         // function for right angle triangle
         for (i=0; i < input; i++){
